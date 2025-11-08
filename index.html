@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>汉字小游戏</title>
   <!-- Tailwind CSS v3 -->
@@ -160,7 +161,7 @@
   </style>
 </head>
 <body class="bg-background min-h-screen flex flex-col items-center justify-center p-4">
-  <div class="w-full max-w-md mx-auto px-2">
+  <div class="w-full max-w-2xl mx-auto px-2">
     <header class="text-center mb-6">
       <h1 class="text-3xl font-bold text-primary mb-2">填字小游戏示例</h1>
       <div class="flex justify-between items-center text-sm text-gray-700 bg-secondary rounded-lg p-2">
@@ -175,17 +176,17 @@
       </div>
     </header>
 
-   <div class="game-container bg-secondary rounded-xl shadow-lg p-4 mb-4">
+    <div class="game-container bg-secondary rounded-xl shadow-lg p-4 mb-4">
       <!-- 游戏网格将通过JavaScript动态生成 -->
       <div id="crossword-grid" class="flex justify-center mb-4 overflow-x-auto pb-4">
         <!-- 网格内容将在这里生成 -->
       </div>
       
       <!-- 备选汉字区域 -->
-      <div id="character-options" class="flex justify-center flex-wrap gap-2 mb-4">
+      <div id="character-options" class="grid grid-cols-6 sm:grid-cols-8 gap-2 mb-6">
         <!-- 备选汉字将在这里生成 -->
       </div>
-      
+
       <!-- 功能按钮区域 -->
       <div class="function-buttons">
         <button id="reset-button" class="function-button">
@@ -884,5 +885,7 @@
   </script>
 </body>
 </html>
+
+
 
 
