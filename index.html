@@ -183,7 +183,7 @@
       </div>
       
       <!-- 备选汉字区域 -->
-      <div id="character-options" class="grid grid-cols-6 sm:grid-cols-8 gap-2 mb-6">
+      <div id="character-options" class="grid grid-cols-6 sm:grid-cols-8 gap-0 mb-6">
         <!-- 备选汉字将在这里生成 -->
       </div>
 
@@ -359,12 +359,12 @@
       
       // 创建网格容器
       const gridContainer = document.createElement('div');
-      gridContainer.className = 'space-y-2'; // 行间距
+      gridContainer.className = 'space-y-1'; // 行间距
       
       // 根据网格数据创建单元格
       level.grid.forEach((row, rowIndex) => {
         const rowContainer = document.createElement('div');
-        rowContainer.className = 'flex items-center space-x-2'; // 列间距
+        rowContainer.className = 'flex items-center space-x-1'; // 列间距
         
         row.forEach((cellType, colIndex) => {
           const cell = document.createElement('div');
@@ -885,6 +885,7 @@
   </script>
 </body>
 </html>
+
 
 
 
